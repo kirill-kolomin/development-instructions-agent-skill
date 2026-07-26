@@ -1,6 +1,6 @@
 {
   "name": "development-instructions-agent-skill",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AI Agent skill with prompting set for development process",
   "main": "index.js",
   "scripts": {
