@@ -1,6 +1,15 @@
-# SKILL.md
+---
+name: development-instructions
+description: Instructions for the agent to follow to help developers to reach better experience and better product quality
+---
 
-This directory contains process documentation for structured agent workflows. Read the appropriate document **before** starting any non-trivial task.
+# Development instructions
+
+Instructions for the agent to follow to help developers to reach better experience and better product quality.
+
+## When to Use
+
+This directory contains process documentation for structured agent workflows. Read the appropriate document **before** starting any development task.
 
 ## Workflow Map
 
