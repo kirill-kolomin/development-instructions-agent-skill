@@ -15,6 +15,26 @@ Adds a bit more to resilience in the process of development with ai agentic codi
 
 ## Install
 
+### As an Agent Plugin
+
+This repository is a valid [Agent Plugin](https://agent-plugins.org/) (spec v1.0.0): `plugin.json` at the root, skills under `skills/`. Any conformant client (Claude Code, Cursor, VS Code, Kiro, etc.) can load it from a local path or a git repository.
+
+Using the [skills CLI](https://skills.sh):
+
+```bash
+npx skills add kirill-kolomin/development-instructions-agent-skill
+```
+
+Using GitHub CLI (Copilot, other `gh skill`-compatible clients):
+
+```bash
+gh skill install kirill-kolomin/development-instructions-agent-skill
+```
+
+Manually: clone this repo and point your client at it the way that client documents for loading local plugins.
+
+### Via npm (skillpm)
+
 Use `skillpm` directly with `npx`:
 
 ```bash
