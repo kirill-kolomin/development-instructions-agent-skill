@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "development-instructions-agent-skill",
+  "version": "0.0.4",
+  "description": "Structured development-process instructions for AI coding agents: codebase exploration, pre-implementation recon, planning, implementation, review, and test design workflows.",
+  "author": {
+    "name": "Kirill Kolomin"
+  },
+  "homepage": "https://github.com/kirill-kolomin/development-instructions-agent-skill#readme",
+  "repository": "https://github.com/kirill-kolomin/development-instructions-agent-skill",
+  "license": "MIT",
+  "keywords": [
+    "agent-plugins",
+    "agent-skills",
+    "development",
+    "workflow",
+    "planning",
+    "code-review",
+    "testing"
+  ]
+}

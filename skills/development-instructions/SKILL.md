@@ -1,11 +1,11 @@
 ---
 name: development-instructions
-description: Instructions for the agent to follow to help developers to reach better experience and better product quality
+description: Structured development-process instructions for AI coding agents, covering codebase exploration, pre-implementation recon, planning, implementation, review, and test design. Use before starting any development task - understanding an unfamiliar codebase, planning a feature or change, implementing an approved plan, reviewing an implementation, or designing tests - to pick and follow the matching workflow document.
 ---
 
 # Development instructions
 
-Instructions for the agent to follow to help developers to reach better experience and better product quality.
+Structured development-process instructions for AI coding agents to follow, helping developers reach a better experience and better product quality.
 
 ## When to Use
 
