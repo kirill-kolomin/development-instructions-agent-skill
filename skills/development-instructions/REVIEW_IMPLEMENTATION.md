@@ -22,7 +22,10 @@ Tasks:
 9. Check structure of changed code:
    - Is new or changed behavior extracted into well-named single-responsibility methods, rather than inlined into a multi-responsibility method?
    - Is the extraction scoped to the changed parts (no over-fragmentation, no restructuring of unchanged code)?
-10. Report whether the change is:
+10. Check naming and descriptions:
+   - Are all introduced names and descriptions (methods, variables, classes, parameters, test names, commit messages, comments) clear to any developer without the task context, not only to the author?
+   - Flag names that only make sense next to the ticket/plan, and new synonyms for domain terms the codebase already has.
+11. Report whether the change is:
    - safe to merge
    - needs revision
    - incomplete

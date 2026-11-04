@@ -37,7 +37,10 @@ Method extraction for changed code:
 - Do not over-fragment: extract by responsibility, not per line. The goal is code that reads like an open book — the orchestrating method shows what happens, the named methods show how.
 - Extracting the part you changed is in scope; restructuring unchanged parts is an unrelated refactor and stays out of scope.
 
-Before coding:
+Naming and descriptions:
+- Every name and description you introduce (methods, variables, classes, parameters, test names, commit messages, comments) must be clear to any developer on the team, not only to the person who implemented this task.
+- Do not rely on task-specific context: a name that only makes sense next to the ticket or plan is a bad name. A reader without the task context must understand what the thing does from the name/description alone.
+- Prefer domain terms already used in the codebase over new synonyms invented for this change.
 - Verify the target files/functions from the plan exist.
 - Verify the proposed changes still matches current code.
 - Identify affected callers/usages of changed logic.
