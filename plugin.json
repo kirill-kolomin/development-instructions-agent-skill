@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "development-instructions-agent-skill",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Structured development-process instructions for AI coding agents: codebase exploration, pre-implementation recon, planning, implementation, review, and test design workflows.",
   "author": {
     "name": "Kirill Kolomin"
