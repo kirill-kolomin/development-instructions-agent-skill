@@ -29,3 +29,12 @@ This directory contains process documentation for structured agent workflows. Re
 3. `PROCEED_TO_IMPLEMENTATION.md` — implement following the plan
 4. `REVIEW_IMPLEMENTATION.md` — verify correctness
 5. `TEST_DESIGN.md` — design and add tests
+
+## Subagent Delegation (applies to every workflow)
+
+When work is delegated to a subagent:
+
+- Check the subagent's status every 2 minutes. Never wait passively for completion: a stuck or failed subagent often looks identical to one that is still working, and hours can be lost waiting on a task that died long ago.
+- On each check, look for observable progress: new output, changed files, status updates. Treat silence as a problem, not as progress.
+- If two consecutive checks show no progress, investigate immediately — inspect the subagent's output/logs, then restart the task or take it over yourself if the subagent is stuck or has failed.
+- When the subagent finishes, verify its result against the original delegation goal before building on it; a completed status does not mean a correct result.
