@@ -25,6 +25,7 @@ Tasks:
 10. Check naming and descriptions:
    - Are all introduced names and descriptions (methods, variables, classes, parameters, test names, commit messages, comments) clear to any developer without the task context, not only to the author?
    - Flag names that only make sense next to the ticket/plan, and new synonyms for domain terms the codebase already has.
+   - Flag description content that carries no useful payload for the reader: generic filler, spec/tooling trivia, self-justification of the change.
 11. Report whether the change is:
    - safe to merge
    - needs revision

@@ -15,8 +15,6 @@ Adds a bit more to resilience in the process of development with ai agentic codi
 
 ## Install
 
-This repository is a valid [Agent Plugin](https://agent-plugins.org/) (spec v1.0.0): `plugin.json` at the root, skills under `skills/`. Any conformant client (Claude Code, Cursor, VS Code, Kiro, etc.) can load it from a local path or a git repository.
-
 Using the [skills CLI](https://skills.sh):
 
 ```bash
