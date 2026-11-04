@@ -15,8 +15,16 @@ Adds a bit more to resilience in the process of development with ai agentic codi
 
 ## Install
 
-Use `skillpm` directly with `npx`:
+Using the [skills CLI](https://skills.sh):
 
 ```bash
-npx skillpm install development-instructions-agent-skill
+npx skills add kirill-kolomin/development-instructions-agent-skill
 ```
+
+Using GitHub CLI (Copilot, other `gh skill`-compatible clients):
+
+```bash
+gh skill install kirill-kolomin/development-instructions-agent-skill
+```
+
+Manually: clone this repo and point your client at it the way that client documents for loading local plugins.
