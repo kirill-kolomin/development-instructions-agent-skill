@@ -13,7 +13,16 @@ Tasks:
    - do they test likely regressions?
 5. Identify fragile assumptions, hidden risks, and uncovered edge cases.
 6. Identify any mismatch between claimed success criteria and actual implementation/testing.
-7. Report whether the change is:
+7. Check completeness of the iteration:
+   - Was logic invalidated by this change (checks, branches, flags, assertions) actually removed, or was stale logic left behind?
+   - Were any negative checks added that assert the absence of old/removed behavior? Flag them — current requirements must be asserted positively, and only where needed.
+8. Check handling of existing checks and conditions:
+   - Was any existing check removed or a condition generalized to all cases? If so, is this explicitly justified by the task/plan, backed by an investigation of who relied on it?
+   - If the task targets one mode/path, verify the other modes/paths remain fully functional.
+9. Check structure of changed code:
+   - Is new or changed behavior extracted into well-named single-responsibility methods, rather than inlined into a multi-responsibility method?
+   - Is the extraction scoped to the changed parts (no over-fragmentation, no restructuring of unchanged code)?
+10. Report whether the change is:
    - safe to merge
    - needs revision
    - incomplete

@@ -30,4 +30,5 @@ Rules:
 - Prefer minimal and targeted changes
 - Do not introduce unrelated refactors or cleanup
 - Preserve existing behavior outside the scope of the task
+- If the task targets a specific mode/path (e.g., one of several application modes), state explicitly which modes/paths are out of scope and must remain fully functional; do not plan to generalize their checks or conditions
 - If something is unclear or ambiguous, ask before proceeding
